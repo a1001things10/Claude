@@ -1,0 +1,40 @@
+{
+  "name": "claude-skill-task-observer",
+  "version": "1.0.0",
+  "description": "Meta-skill que observa padrões de trabalho e sugere melhorias automáticas para skills",
+  "main": "init.js",
+  "bin": {
+    "task-observer": "init.js"
+  },
+  "scripts": {
+    "init": "node init.js",
+    "record": "node init.js record",
+    "review": "node init.js review",
+    "list": "node init.js list"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "skill",
+    "task-observer",
+    "pattern-recognition",
+    "automation",
+    "meta-skill",
+    "workflow-improvement"
+  ],
+  "author": "Claude Code",
+  "license": "CC BY 4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a1001things10/claude"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "SKILL.md",
+    "init.js",
+    "package.json",
+    "README.md"
+  ]
+}
