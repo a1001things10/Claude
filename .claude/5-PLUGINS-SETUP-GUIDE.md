@@ -31,7 +31,7 @@ claude config list
 ## 1️⃣ OMNIROUTE
 **O que faz:** Gateway local que roteia requisições para diferentes modelos LLM (GLM, DeepSeek, etc)  
 **Quando usar:** Testar modelos alternativos, rate limiting, proxy local  
-**Status:** ❌ NÃO INSTALADO
+**Status:** ✅ INSTALADO
 
 ### Instalação
 
@@ -146,7 +146,7 @@ Use: `/plugin install claude-mem` via Claude Code UI
 ## 3️⃣ HEADROOM
 **O que faz:** Comprime tokens/contexto (cache prompt, resumo automático)  
 **Quando usar:** Sessões longas, grandes codebases, economizar tokens  
-**Status:** ❌ NÃO INSTALADO
+**Status:** ✅ INSTALADO
 
 ### Instalação
 
@@ -205,7 +205,7 @@ headroom stats
 ## 4️⃣ CLAUDE CODE SETUP
 **O que faz:** Plugin oficial que recomenda automações e hooks  
 **Quando usar:** Onboarding, descobrir boas práticas  
-**Status:** ❌ NÃO INSTALADO (no marketplace)
+**Status:** ✅ INSTALADO
 
 ### Instalação
 
@@ -307,17 +307,18 @@ Status: ✓ JÁ CRIADA (image-pro)
 /plugin install claude-code-setup@claude-plugins-official
 ```
 
-### Fase 2: OTIMIZAÇÃO (opcional)
+### Fase 2: OTIMIZAÇÃO ✅ FEITA
 ```bash
-pip install headroom-ai[all]
+# ✅ Headroom already installed
+headroom --version
 headroom wrap claude      # testar
 ```
 
-### Fase 3: AVANÇADO (se precisar)
+### Fase 3: AVANÇADO ✅ FEITA
 ```bash
-npm install -g omniroute
-omniroute setup-claude
-omniroute launch
+# ✅ OmniRoute already installed
+omniroute --version
+omniroute launch          # Abrirá em localhost:20128
 ```
 
 ---

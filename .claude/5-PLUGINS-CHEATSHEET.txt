@@ -20,7 +20,7 @@ USE:
   claude --model glm/glm-5.2                # Usar modelo GLM
   claude --model deepseek/deepseek-chat     # Ou DeepSeek
 
-STATUS: ❌ NÃO INSTALADO
+STATUS: ✅ INSTALADO
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ 2️⃣  CLAUDE MEM - Session Memory (Persiste entre sessões)                ┃
@@ -58,7 +58,7 @@ CONFIGURE:
   export HEADROOM_STRATEGY="summarize"
   export HEADROOM_DEBUG=1                   # Debug mode
 
-STATUS: ❌ NÃO INSTALADO
+STATUS: ✅ INSTALADO
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ 4️⃣  CLAUDE CODE SETUP - Official Plugin (Automations)                  ┃
@@ -74,7 +74,7 @@ USE (conversação natural):
   "analyze my workflow and suggest improvements"
   "create pre-commit hooks for me"
 
-STATUS: ❌ NÃO INSTALADO
+STATUS: ✅ INSTALADO
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ 5️⃣  TASK OBSERVER - Meta-Skill (Detecta padrões)                        ┃
@@ -96,9 +96,9 @@ STATUS: ✅ INSTALADO
 ╔════════════════════════════════════════════════════════════════════════════╗
 ║                         📊 STATUS SUMMARY                                 ║
 ╠════════════════════════════════════════════════════════════════════════════╣
-║ OmniRoute        ❌ Not Installed  │ Claude Mem       ✅ Ready            ║
-║ Headroom         ❌ Not Installed  │ Claude Setup     ❌ Not Installed    ║
-║ Task Observer    ✅ Ready          │                                      ║
+║ OmniRoute        ✅ Ready           │ Claude Mem       ✅ Ready            ║
+║ Headroom         ✅ Ready           │ Claude Setup     ✅ Ready            ║
+║ Task Observer    ✅ Ready           │                                      ║
 ╚════════════════════════════════════════════════════════════════════════════╝
 
 ╔════════════════════════════════════════════════════════════════════════════╗
