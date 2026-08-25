@@ -96,9 +96,9 @@ STATUS: ✅ INSTALADO
 ╔════════════════════════════════════════════════════════════════════════════╗
 ║                         📊 STATUS SUMMARY                                 ║
 ╠════════════════════════════════════════════════════════════════════════════╣
-║ OmniRoute        ✅ Ready           │ Claude Mem       ✅ Ready            ║
-║ Headroom         ✅ Ready           │ Claude Setup     ✅ Ready            ║
-║ Task Observer    ✅ Ready           │                                      ║
+║ OmniRoute        ✅ 3.8.49           │ Claude Mem       ✅ 13.15.3         ║
+║ Headroom         ⚠️  Needs pip fix   │ Claude Setup     ✅ Ready (plugin)   ║
+║ Task Observer    ✅ Ready (skill)    │                                      ║
 ╚════════════════════════════════════════════════════════════════════════════╝
 
 ╔════════════════════════════════════════════════════════════════════════════╗

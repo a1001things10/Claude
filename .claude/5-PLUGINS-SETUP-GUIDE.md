@@ -146,7 +146,7 @@ Use: `/plugin install claude-mem` via Claude Code UI
 ## 3️⃣ HEADROOM
 **O que faz:** Comprime tokens/contexto (cache prompt, resumo automático)  
 **Quando usar:** Sessões longas, grandes codebases, economizar tokens  
-**Status:** ✅ INSTALADO
+**Status:** ⚠️ REQUER FIX (pip conflict)
 
 ### Instalação
 
@@ -403,6 +403,15 @@ export HEADROOM_CACHE_SIZE=10000
 omniroute kill
 omniroute launch
 netstat -an | grep 20128
+```
+
+### Headroom PyJWT conflict
+```bash
+# Solução: força instalação ignorando conflito
+pip install --upgrade --force-reinstall headroom-ai[all]
+
+# Ou use pipx (isolado)
+pipx install headroom-ai
 ```
 
 ---
