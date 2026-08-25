@@ -1,0 +1,144 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║           🚀 5 PLUGINS DO CLAUDE CODE - QUICK REFERENCE                    ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 1️⃣  OMNIROUTE - Model Gateway (Local LLM Routing)                       ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+INSTALL:
+  npm install -g omniroute
+
+START:
+  omniroute launch                          # Inicia em localhost:20128
+  omniroute setup-claude                    # Auto-configura Claude
+
+CONFIG:
+  claude config set ANTHROPIC_BASE_URL "http://localhost:20128"
+
+USE:
+  claude --model glm/glm-5.2                # Usar modelo GLM
+  claude --model deepseek/deepseek-chat     # Ou DeepSeek
+
+STATUS: ❌ NÃO INSTALADO
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 2️⃣  CLAUDE MEM - Session Memory (Persiste entre sessões)                ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+INSTALL:
+  npm install -g claude-mem
+  ⚠️  NÃO use: npm install -g (não funciona com hooks)
+
+USE:
+  claude-mem set --key "projeto" --value "Demo Ultimate"
+  claude-mem get --key "projeto"           # "Demo Ultimate"
+  claude-mem list                          # Lista todas as chaves
+  claude-mem delete --key "antiga"         # Remove chave
+  claude-mem export > backup.json          # Backup
+  claude-mem import < backup.json          # Restore
+
+STATUS: ✅ INSTALADO
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 3️⃣  HEADROOM - Token Compression (Economiza tokens)                     ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+INSTALL:
+  pip install "headroom-ai[all]"
+  # ou: pipx install headroom-ai
+
+USE:
+  headroom wrap claude                      # Run Claude via Headroom
+  headroom proxy --port 8787                # Proxy mode
+  headroom mcp install                      # MCP Server mode
+
+CONFIGURE:
+  export HEADROOM_COMPRESSION_RATIO=0.7     # 70% economia
+  export HEADROOM_STRATEGY="summarize"
+  export HEADROOM_DEBUG=1                   # Debug mode
+
+STATUS: ❌ NÃO INSTALADO
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 4️⃣  CLAUDE CODE SETUP - Official Plugin (Automations)                  ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+INSTALL (via Claude Code):
+  /plugin install claude-code-setup@claude-plugins-official
+  /reload-plugins
+
+USE (conversação natural):
+  "recommend automations for this project"
+  "what hooks should I use?"
+  "analyze my workflow and suggest improvements"
+  "create pre-commit hooks for me"
+
+STATUS: ❌ NÃO INSTALADO
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 5️⃣  TASK OBSERVER - Meta-Skill (Detecta padrões)                        ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+LOCATION:
+  ~/.claude/skills/task-observer/
+
+USE:
+  /skill task-observer
+
+FUNCTIONS (JavaScript):
+  recordObservation("padrão", { type: "repetitivo", frequency: "diário" })
+  listOpenObservations()
+  weeklyReview()
+
+STATUS: ✅ INSTALADO
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                         📊 STATUS SUMMARY                                 ║
+╠════════════════════════════════════════════════════════════════════════════╣
+║ OmniRoute        ❌ Not Installed  │ Claude Mem       ✅ Ready            ║
+║ Headroom         ❌ Not Installed  │ Claude Setup     ❌ Not Installed    ║
+║ Task Observer    ✅ Ready          │                                      ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    🚀 INSTALLATION COMMAND                                ║
+╠════════════════════════════════════════════════════════════════════════════╣
+║                                                                            ║
+║  bash ~/.claude/install-5-plugins.sh                                      ║
+║                                                                            ║
+║  (Interactive installer with prompts)                                     ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                   📚 COMMANDS QUICK REFERENCE                             ║
+╠════════════════════════════════════════════════════════════════════════════╣
+║                                                                            ║
+║ Plugin Management:                                                         ║
+║   /plugin list                    # List all installed plugins             ║
+║   /plugin marketplace add ...     # Add marketplace                       ║
+║   /reload-plugins                 # Reload without restart                ║
+║                                                                            ║
+║ Skill Management:                                                          ║
+║   /skill image-pro                # Generate images                       ║
+║   /skill video-pro                # Create videos                         ║
+║   /skill dataviz-pro              # Build dashboards                      ║
+║   /skill web-premium              # Create websites                       ║
+║   /skill task-observer            # Analyze patterns                      ║
+║                                                                            ║
+║ Claude Mem:                                                                ║
+║   claude-mem set --key "k" --value "v"    # Store value                  ║
+║   claude-mem get --key "k"                # Retrieve value                ║
+║   claude-mem list                         # List all keys                 ║
+║                                                                            ║
+║ Config:                                                                    ║
+║   claude config set KEY VALUE             # Set setting                   ║
+║   claude config list                      # Show all settings             ║
+║   claude --version                        # Check version                 ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+✨ Created: 2026-08-25
+📖 Full Guide: ~/.claude/5-PLUGINS-SETUP-GUIDE.md
+🔧 Auto Installer: ~/.claude/install-5-plugins.sh
