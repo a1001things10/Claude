@@ -97,7 +97,7 @@ STATUS: ✅ INSTALADO
 ║                         📊 STATUS SUMMARY                                 ║
 ╠════════════════════════════════════════════════════════════════════════════╣
 ║ OmniRoute        ✅ 3.8.49           │ Claude Mem       ✅ 13.15.3         ║
-║ Headroom         ⚠️  Needs pip fix   │ Claude Setup     ✅ Ready (plugin)   ║
+║ Headroom         ✅ 0.36.5           │ Claude Setup     ✅ Ready (plugin)   ║
 ║ Task Observer    ✅ Ready (skill)    │                                      ║
 ╚════════════════════════════════════════════════════════════════════════════╝
 

@@ -146,7 +146,7 @@ Use: `/plugin install claude-mem` via Claude Code UI
 ## 3️⃣ HEADROOM
 **O que faz:** Comprime tokens/contexto (cache prompt, resumo automático)  
 **Quando usar:** Sessões longas, grandes codebases, economizar tokens  
-**Status:** ⚠️ REQUER FIX (pip conflict)
+**Status:** ✅ INSTALADO (v0.36.5)
 
 ### Instalação
 
@@ -309,9 +309,9 @@ Status: ✓ JÁ CRIADA (image-pro)
 
 ### Fase 2: OTIMIZAÇÃO ✅ FEITA
 ```bash
-# ✅ Headroom already installed
+# ✅ Headroom already installed (v0.36.5)
 headroom --version
-headroom wrap claude      # testar
+headroom wrap claude      # testar compressão
 ```
 
 ### Fase 3: AVANÇADO ✅ FEITA
@@ -405,13 +405,14 @@ omniroute launch
 netstat -an | grep 20128
 ```
 
-### Headroom PyJWT conflict
+### Headroom instalado com sucesso ✅
 ```bash
-# Solução: força instalação ignorando conflito
-pip install --upgrade --force-reinstall headroom-ai[all]
+# Verificar instalação
+headroom --version
+# Output: headroom, version 0.36.5
 
-# Ou use pipx (isolado)
-pipx install headroom-ai
+# Usar para compressão de tokens
+headroom wrap claude       # Executar Claude via Headroom
 ```
 
 ---
